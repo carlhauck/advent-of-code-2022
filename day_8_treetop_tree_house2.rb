@@ -1,4 +1,3 @@
-require 'pry'
 def treetop_tree_house(puzzle_input)
   max_scenic_score = 0
   @rows = puzzle_input.map { |row| row.chars.map(&:to_i) }
@@ -66,5 +65,5 @@ def visible_to_bottom(tree_height, row_index, col_index)
   count
 end
 
-puzzle_input = File.open("puzzle_inputs/day-8.txt").readlines(chomp: true)
+puzzle_input = File.open("puzzle_inputs/day_8.txt").readlines(chomp: true)
 treetop_tree_house(puzzle_input)

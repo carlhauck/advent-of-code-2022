@@ -16,5 +16,5 @@ def camp_cleanup(puzzle_input)
   p sum
 end
 
-puzzle_input = File.open("puzzle_inputs/day-4.txt").readlines(chomp: true)
+puzzle_input = File.open("puzzle_inputs/day_4.txt").readlines(chomp: true)
 camp_cleanup(puzzle_input)

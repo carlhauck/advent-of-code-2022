@@ -17,5 +17,5 @@ def tuning_trouble(puzzle_input)
   end
 end
 
-puzzle_input = File.open("puzzle_inputs/day-6.txt").readlines(chomp: true).first
+puzzle_input = File.open("puzzle_inputs/day_6.txt").readlines(chomp: true).first
 tuning_trouble(puzzle_input)

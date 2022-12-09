@@ -35,5 +35,5 @@ def rock_paper_scissors(puzzle_input)
   p total
 end
 
-puzzle_input = File.open("puzzle_inputs/day-2.txt").readlines(chomp: true)
+puzzle_input = File.open("puzzle_inputs/day_2.txt").readlines(chomp: true)
 rock_paper_scissors(puzzle_input)

@@ -15,13 +15,12 @@ def supply_stacks(puzzle_input)
 
   puzzle_instructions.each do |instruction|
     instruction = instruction.split(" ")
-    instruction[1].to_i.times do
-      STACKS[instruction[5].to_i] << STACKS[instruction[3].to_i].pop
-    end
+    STACKS[instruction[5].to_i] << STACKS[instruction[3].to_i].pop(instruction[1].to_i)
+    STACKS[instruction[5].to_i].flatten!
   end
 
   p STACKS.values.map { |stack| stack[-1] }.join
 end
 
-puzzle_input = File.open("puzzle_inputs/day-5.txt").readlines(chomp: true)
+puzzle_input = File.open("puzzle_inputs/day_5.txt").readlines(chomp: true)
 supply_stacks(puzzle_input)

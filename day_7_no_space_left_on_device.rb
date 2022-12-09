@@ -84,5 +84,5 @@ def find_directory_sizes(node, directory_sizes)
   end
 end
 
-puzzle_input = File.open('puzzle_inputs/day-7.txt').readlines(chomp: true)
+puzzle_input = File.open('puzzle_inputs/day_7.txt').readlines(chomp: true)
 no_space_left_on_device(puzzle_input)

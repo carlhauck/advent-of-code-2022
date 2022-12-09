@@ -24,5 +24,5 @@ def rucksack_reorganization(puzzle_input)
   p priority_sum
 end
 
-puzzle_input = File.open("puzzle_inputs/day-3.txt").readlines(chomp: true)
+puzzle_input = File.open("puzzle_inputs/day_3.txt").readlines(chomp: true)
 rucksack_reorganization(puzzle_input)

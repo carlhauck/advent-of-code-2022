@@ -27,5 +27,5 @@ def count_calories(puzzle_input)
   p max_three.sum
 end
 
-puzzle_input = File.open("puzzle_inputs/day-1.txt").readlines.map(&:to_i)
+puzzle_input = File.open("puzzle_inputs/day_1.txt").readlines.map(&:to_i)
 count_calories(puzzle_input)
